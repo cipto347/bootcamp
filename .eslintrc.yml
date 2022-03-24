@@ -2,6 +2,7 @@ env:
   browser: true
   es2021: true
   jest: true
+  node: true
 extends:
   - react-app
   - react-app/jest
@@ -16,6 +17,17 @@ parserOptions:
 plugins:
   - react
   - prettier
+settings:
+  import/resolver:
+    node:
+      extensions:
+        - ".ts"
+        - ".tsx"
+        - ".js"
+        - ".jsx"
+      moduleDirectory:
+        - src
+        - node_modules
 rules: {
   "quotes" : [
     "error",

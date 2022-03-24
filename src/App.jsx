@@ -2,6 +2,9 @@ import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+//tailwind
+import "/src/style/tailwind/index.css";
+
 function App() {
   const [count, setCount] = useState(0);
 

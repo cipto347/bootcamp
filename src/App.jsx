@@ -13,12 +13,24 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
-        <button className="btn">Button</button>
-        <button className="btn btn-primary">Button</button>
-        <button className="btn btn-secondary">Button</button>
-        <button className="btn btn-accent">Button</button>
-        <button className="btn btn-ghost">Button</button>
-        <button className="btn btn-link">Button</button>
+        <button type="button" className="btn">
+          Button
+        </button>
+        <button type="button" className="btn btn-primary">
+          Button
+        </button>
+        <button type="button" className="btn btn-secondary">
+          Button
+        </button>
+        <button type="button" className="btn btn-accent">
+          Button
+        </button>
+        <button type="button" className="btn btn-ghost">
+          Button
+        </button>
+        <button type="button" className="btn btn-link">
+          Button
+        </button>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}

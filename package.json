@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "lint": "eslint --debug 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --debug --fix 'src/**/*.{js,jsx,ts,tsx}'",
-    "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\""
+    "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^1.0.7",
@@ -27,7 +28,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier": "^2.6.0"
+    "prettier": "^2.6.0",
+    "husky": "^7.0.0"
   },
   "lint-staged": {
     "**/*.{js,jsx,json}": [

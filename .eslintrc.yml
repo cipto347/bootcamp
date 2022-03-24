@@ -7,6 +7,7 @@ extends:
   - react-app/jest
   - plugin:react/recommended
   - airbnb
+  - plugin:prettier/recommended
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -14,6 +15,7 @@ parserOptions:
   sourceType: module
 plugins:
   - react
+  - prettier
 rules: {
   "quotes" : [
     "error",

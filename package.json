@@ -1,51 +1,51 @@
 {
-  "name": "pena-react",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint --debug 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": "eslint --debug --fix 'src/**/*.{js,jsx,ts,tsx}'",
-    "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\"",
-    "prepare": "husky install"
-  },
-  "dependencies": {
-    "@vitejs/plugin-react": "^1.0.7",
-    "penaui": "^1.0.0",
-    "penaui-helpers": "^1.0.2-beta-1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "sass": "^1.49.9",
-    "vite": "^2.8.0"
-  },
-  "prettier": "eslint-config-prettier",
-  "devDependencies": {
-    "autoprefixer": "^10.4.4",
-    "eslint": "^8.11.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-react-app": "^7.0.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "husky": "^7.0.0",
-    "postcss": "^8.4.12",
-    "prettier": "^2.6.0",
-    "tailwindcss": "^3.0.23"
-  },
-  "lint-staged": {
-    "**/*.{js,jsx,json}": [
-      "eslint . --fix",
-      "prettier --write ."
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+ "name": "pena-react",
+ "private": true,
+ "version": "0.0.0",
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "lint": "eslint --debug .",
+  "lint:fix": "eslint --debug --fix .",
+  "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\"",
+  "prepare": "husky install"
+ },
+ "dependencies": {
+  "@vitejs/plugin-react": "^1.0.7",
+  "penaui": "^1.0.0",
+  "penaui-helpers": "^1.0.2-beta-1",
+  "react": "^17.0.2",
+  "react-dom": "^17.0.2",
+  "sass": "^1.49.9",
+  "vite": "^2.8.0"
+ },
+ "prettier": "eslint-config-prettier",
+ "devDependencies": {
+  "autoprefixer": "^10.4.4",
+  "eslint": "^8.11.0",
+  "eslint-config-airbnb": "^19.0.4",
+  "eslint-config-prettier": "^8.5.0",
+  "eslint-config-react-app": "^7.0.0",
+  "eslint-plugin-import": "^2.25.4",
+  "eslint-plugin-jsx-a11y": "^6.5.1",
+  "eslint-plugin-prettier": "^4.0.0",
+  "eslint-plugin-react": "^7.29.4",
+  "eslint-plugin-react-hooks": "^4.3.0",
+  "husky": "^7.0.0",
+  "postcss": "^8.4.12",
+  "prettier": "^2.6.0",
+  "tailwindcss": "^3.0.23"
+ },
+ "lint-staged": {
+  "**/*.{js,jsx,json}": [
+   "eslint . --fix",
+   "prettier --write ."
+  ]
+ },
+ "husky": {
+  "hooks": {
+   "pre-commit": "lint-staged"
   }
+ }
 }

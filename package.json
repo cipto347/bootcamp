@@ -3,6 +3,7 @@
  "private": true,
  "version": "0.0.0",
  "scripts": {
+  "dev": "vite",
   "build": "vite build",
   "preview": "vite preview",
   "lint": "eslint --debug .",
@@ -11,8 +12,8 @@
   "prepare": "husky install"
  },
  "dependencies": {
+  "@penaui/penaui": "^1.0.0",
   "@vitejs/plugin-react": "^1.0.7",
-  "penaui": "^1.0.0",
   "penaui-helpers": "^1.0.2-beta-1",
   "react": "^17.0.2",
   "react-dom": "^17.0.2",

@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("penaui")],
+  plugins: [require("@penaui/penaui")],
   penaui: {
     themes: ["unpad"],
   },

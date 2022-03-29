@@ -4,7 +4,7 @@ function handleResponse(response) {
 
     if (!response.ok) {
       if ([403].includes(response.status)) {
-        alert("submit fail");
+        return "403";
       }
 
       const error = (data && data.message) || response.statusText;

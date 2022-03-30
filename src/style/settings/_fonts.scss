@@ -1,0 +1,17 @@
+@layer base {
+  @font-face {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    src:
+            url("/src/assets/fonts/inter-v8-latin-regular.eot"),
+            url("/src/assets/fonts/inter-v8-latin-regular.woff2") format('woff2'),
+            url("/src/assets/fonts/inter-v8-latin-regular.woff") format('woff'),
+            url("/src/assets/fonts/inter-v8-latin-regular.eot?#iefix") format('embedded-opentype'),
+            url("/src/assets/fonts/inter-v8-latin-regular.ttf") format('truetype'),
+            url("/src/assets/fonts/inter-v8-latin-regular.svg") format('svg')
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}

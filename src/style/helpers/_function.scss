@@ -1,0 +1,5 @@
+@import '../settings/variable';
+
+@function em($pixels, $context: $pixelSize) {
+  @return #{$pixels/$context}em;
+}

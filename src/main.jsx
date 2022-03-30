@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./services/auth/UseAuth";
 
 // i18n init
-import i18n from "/src/services/i18n/i18n";
+import i18n from "/src/services/language/I18n";
 
 // css
 import "./index.css";
@@ -13,7 +13,7 @@ import "./index.css";
 import App from "./App";
 
 // tailwind
-import "./style/tailwind/index.scss";
+import "./style/Index.scss";
 
 ReactDOM.render(
   <React.StrictMode>

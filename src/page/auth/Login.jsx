@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import useAuth from "/src/services/auth/UseAuth";
 import { useTranslation } from "react-i18next";

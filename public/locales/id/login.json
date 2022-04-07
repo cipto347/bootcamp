@@ -1,6 +1,15 @@
 {
+  "meta": {
+    "title": "Halaman Masuk",
+    "description": "Deskripsi"
+  },
   "login": {
-    "title": "Masuk disini",
+    "title": "Masuk",
     "description": "ini adalah form untuk login aplikasi"
+  },
+  "form": {
+    "firstname": "nama depan",
+    "firstnamePlaceholder": "masukkan nama depan disini",
+    "firstnameValidation": "nama depan wajib diiisi"
   }
 }

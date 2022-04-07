@@ -1,6 +1,15 @@
 {
+  "meta": {
+    "title": "Login page",
+    "description": "Login description"
+  },
   "login": {
-    "title": "Login now",
+    "title": "Login",
     "description": "Switch language between english and german using buttons above."
+  },
+  "form": {
+    "firstname": "firstname",
+    "firstnamePlaceholder": "type your firstname here",
+    "firstnameValidation": "firstname is a required field"
   }
 }

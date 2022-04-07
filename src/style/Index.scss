@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 @import "./settings/_fonts";
+
+@layer utilities {
+  @import "./component/mask";
+}

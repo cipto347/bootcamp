@@ -1,0 +1,19 @@
+.mask-top{
+  mask-position: top;
+  @apply mask
+}
+
+.mask-bottom{
+  mask-position: bottom;
+  @apply mask
+}
+
+.mask-right{
+  mask-position: right;
+  @apply mask
+}
+
+.mask-left{
+  mask-position: left;
+  @apply mask
+}

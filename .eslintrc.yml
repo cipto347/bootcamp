@@ -35,9 +35,26 @@ rules:
     - avoidEscape: true
   react/jsx-uses-react: 'off'
   react/react-in-jsx-scope: 'off'
-  react/jsx-props-no-spreading: warn
+  react/jsx-props-no-spreading: 'off'
   no-shadow: 'off'
   prettier/prettier:
     - error
     - endOfLine: auto
   global-require: 0
+  jsx-a11y/label-has-associated-control:
+    - error
+    - required:
+        some:
+          - nesting
+          - id
+  jsx-a11y/label-has-for:
+    - error
+    - required:
+        some:
+          - nesting
+          - id
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies: true
+      optionalDependencies: false
+      peerDependencies: false

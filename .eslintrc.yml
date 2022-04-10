@@ -58,3 +58,6 @@ rules:
     - devDependencies: true
       optionalDependencies: false
       peerDependencies: false
+  react/forbid-prop-types: off
+  react/void-dom-elements-no-children: off
+  react/jsx-no-bind: off

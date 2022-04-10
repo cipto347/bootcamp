@@ -1,5 +1,5 @@
 {
- "name": "pena-react",
+ "name": "kawasanku",
  "private": true,
  "version": "0.0.0",
  "scripts": {
@@ -13,7 +13,7 @@
  },
  "dependencies": {
   "@hookform/resolvers": "^2.8.8",
-  "@pena/penaui": "^1.0.5-beta",
+  "daisyui": "^2.13.6",
   "@vitejs/plugin-react": "^1.0.7",
   "chart.js": "^3.7.1",
   "gridjs": "^5.0.2",
@@ -21,7 +21,6 @@
   "i18next": "^21.6.14",
   "i18next-browser-languagedetector": "^6.1.4",
   "i18next-http-backend": "^1.4.0",
-  "penaui-helpers": "^1.0.2-beta-1",
   "prop-types": "^15.8.1",
   "react": "^17.0.2",
   "react-chartjs-2": "^4.0.1",

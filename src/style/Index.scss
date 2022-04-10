@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,5 +7,10 @@
 @import "./settings/_fonts";
 
 @layer utilities {
-  @import "./component/mask";
+  @import "./component/_mask";
+  @import "./component/_gradient";
+  @import "./component/_utils";
+  @import "./component/_typhography";
+  @import "./component/_shadows";
+  @import "./component/_background";
 }

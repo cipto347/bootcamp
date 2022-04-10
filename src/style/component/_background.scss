@@ -1,0 +1,7 @@
+[data-theme=telkom] .bg-input {
+  @apply bg-white
+}
+
+[data-theme=dark] .bg-input {
+  @apply bg-gray-800 opacity-60
+}

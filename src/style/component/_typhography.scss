@@ -1,0 +1,259 @@
+@import '../helpers/_function';
+@import '../settings/_variable';
+
+.headline-dgh-1 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: em(32);
+  line-height: em(37);
+  letter-spacing: em(0.12);
+}
+
+.headline-dgh-1-card {
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: em(32);
+  letter-spacing: em(0.12);
+}
+
+.headline-dgh-2-card {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: em(28);
+  letter-spacing: em(0.12);
+}
+
+.headline-1 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: em(24);
+  line-height: em(28);
+  letter-spacing: em(0.12);
+}
+
+.headline-2 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: em(20);
+  line-height: em(23);
+  letter-spacing: em(0.12);
+}
+
+.headline-3 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: em(18);
+  line-height: em(21);
+  letter-spacing: em(0.12);
+}
+
+.headline-4 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: em(15);
+  line-height: em(17);
+  letter-spacing: em(0.12);
+}
+
+.headline-5 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: em(13);
+  line-height: em(15);
+  letter-spacing: em(0.12);
+}
+
+.headline-6 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: em(12);
+  line-height: em(14);
+  letter-spacing: em(0.12);
+}
+
+.button-1 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: em(14);
+  line-height: em(16);
+  letter-spacing: em(0.12);
+}
+
+.button-2 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: em(12);
+  line-height: em(14);
+  letter-spacing: em(0.12);
+}
+
+.subtitle-1 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: em(14);
+  line-height: em(18);
+  letter-spacing: em(0.12);
+}
+
+.subtitle-2 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: em(13);
+  line-height: em(21);
+  letter-spacing: em(0.12);
+}
+
+.caption-dgh-1 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: em(20);
+  line-height: em(23);
+  letter-spacing: em(0.12);
+}
+
+.caption-1 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: em(15);
+  line-height: em(17);
+  letter-spacing: em(0.12);
+}
+
+.caption-2 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: em(12);
+  line-height: em(22);
+  letter-spacing: em(0.12);
+}
+
+.caption-3 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: em(11);
+  line-height: em(16);
+  letter-spacing: em(0.12);
+}
+
+.caption-promo {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: em(12);
+  line-height: em(18);
+  letter-spacing: em(0.12);
+  text-decoration-line: line-through;
+}
+
+.label-1{
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: em(14);
+  line-height: em(20);
+  letter-spacing: em(0.12);
+  opacity: 0.8;
+}
+
+.label-1-no-color{
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: em(14);
+  line-height: em(20);
+  letter-spacing: em(0.12);
+  opacity: 0.8;
+}
+
+[data-theme=dark] .validation-1{
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: em(13);
+  line-height: em(20);
+  @apply text-primary opacity-60;
+}
+
+[data-theme=telkom] .validation-1{
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: em(13);
+  line-height: em(20);
+  @apply text-primary;
+}
+
+.label-header-table{
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: em(16);
+  line-height: em(24);
+  letter-spacing: em(0.12);
+  @apply text-accent;
+}
+
+.label-body-table{
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: em(16);
+  line-height: em(24);
+  letter-spacing: em(0.12);
+  @apply text-accent;
+}
+
+.label-info{
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: em(16);
+  line-height: em(24);
+  letter-spacing: em(0.12);
+  @apply text-accent
+}
+
+.shift-card-time{
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: em(11);
+  line-height: em(16);
+  letter-spacing: em(0.12);
+}
+
+.shift-card-body{
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: em(11);
+  line-height: em(14);
+  letter-spacing: em(0.12);
+}
+
+.typo-desc{
+  font-style: normal;
+  font-weight: 400;
+  font-family: $font;
+  font-size: em(15);
+  line-height: em(21);
+  letter-spacing: em(0.12);
+  @apply opacity-60
+}

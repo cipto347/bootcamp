@@ -15,7 +15,6 @@ function InputText({
   const inputRef = useRef(refProp);
   return (
     <>
-      <pre>{console.log(refProp)}</pre>
       <label htmlFor={id}>{label}</label>
       <input
         id={id}

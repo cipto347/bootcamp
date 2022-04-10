@@ -1,5 +1,6 @@
+@use "sass:math";
 @import '../settings/variable';
 
 @function em($pixels, $context: $pixelSize) {
-  @return #{$pixels/$context}em;
+  @return #{math.div($pixels, $context)}em;
 }

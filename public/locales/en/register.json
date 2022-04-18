@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Login page",
+    "description": "Login description"
+  },
+  "login": {
+    "title": "Login",
+    "greeting": "Welcome back"
+  },
+  "form": {
+    "username": "Email or phone number",
+    "usernamePlaceholder": "input email or phone number here",
+    "usernameValidationRequired": "email or phone number is required ",
+    "usernameValidationEmail": "sorry your email can't exist ",
+    "usernameValidationPhone": "sorry your phone number can't exist ",
+    "password": "Password",
+    "passwordPlaceholder": "input password",
+    "passwordValidation": "sorry your password can't match ",
+    "passwordValidationRequired": "password is required ",
+    "recovery": "Recovery code",
+    "recoveryPlaceholder": "input recovery code",
+    "recoveryValidation": "sorry your recovery code can't match",
+    "recoveryValidationRequired": "recovery code is required"
+  },
+  "forgot": {
+    "forgot": "forgot",
+    "password": "password ?",
+    "title": "Forgot Password ?",
+    "desc": "Do not worry! Receive password recovery code\non your registered mobile number or email."
+  },
+  "register": {
+    "dontHaveAccount": "Don't have an account?",
+    "register": "Register"
+  },
+  "button": {
+    "login": "Login",
+    "sendForgot": "Send recovery code",
+    "next": "next",
+    "sendAgain": "send code again in"
+  },
+  "recovery": {
+    "title": "Enter Recovery Code",
+    "desc": "Enter the recovery code we emailed you to"
+  }
+}

@@ -9,6 +9,9 @@ import Home from "./page/Home";
 import Login from "./page/auth/Login";
 import Profile from "./page/profile/Profile";
 import DocChart from "./page/documentation/DocChart";
+import Register from "./page/auth/Register";
+import Dashboard from "./page/admin/Dashboard";
+import AdminLayout from "./page/layout/AdminLayout";
 
 function ProtectedRoute({ children }) {
   const { authed } = useAuth();
@@ -25,7 +28,11 @@ function App() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
-      <Route path="/chart" element={<DocChart />} />
+      <Route path="/register" element={<Register />} />
+      <Route element={<AdminLayout />}>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/chart" element={<DocChart />} />
+      </Route>
       <Route
         path="/profile"
         element={

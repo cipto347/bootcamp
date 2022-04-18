@@ -1,0 +1,19 @@
+{
+  "label": {
+    "dashboard": "Dashboar",
+    "bill": "Tagihan",
+    "listBill": "List Tagihan",
+    "listIpl": "Daftar IPL",
+    "settingIpl": "Pengaturan Setting",
+    "info": "Papan Info",
+    "listInfo": "List Info",
+    "customerInfo": "Pelanggan",
+    "employeeInfo": "Petugas",
+    "email": "Email / SMS",
+    "tenant": "Info Penyewa",
+    "employee": "Info Petugas",
+    "shift": "Jadwal Shift",
+    "parking": "Parkir",
+    "complaint": "Keluhan"
+  }
+}

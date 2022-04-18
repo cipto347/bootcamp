@@ -14,3 +14,8 @@
   @import "./component/_shadows";
   @import "./component/_background";
 }
+
+.main-layout {
+  height: calc(100% - 72px);
+}
+

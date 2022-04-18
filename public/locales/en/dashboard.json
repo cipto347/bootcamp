@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Dashboard",
+    "description": "Is Dashboard"
+  },
+  "title": {
+    "unit_apartemen": "Apartment Unit",
+    "penyewa": "Tenant",
+    "karyawan": "Employee",
+    "keluhan": "Complaint"
+  }
+}

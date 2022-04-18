@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "title": "Dashboard",
+    "description": "Ini Dashboard"
+  },
+  "title": {
+    "unit_apartemen": "Unit Apartemen",
+    "penyewa": "Penyewa",
+    "karyawan": "Karyawan",
+    "keluhan": "Keluhan"
+  }
+}

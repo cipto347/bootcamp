@@ -1,0 +1,19 @@
+{
+  "label": {
+    "dashboard": "Dashboard",
+    "bill": "Info Board",
+    "listBill": "Bill List",
+    "listIpl": "List IPL",
+    "settingIpl": "IPL Setting",
+    "info": "Info Board",
+    "listInfo": "List Info",
+    "customerInfo": "Costumer Info",
+    "employeeInfo": "Employee Info",
+    "email": "Email / SMS",
+    "tenant": "Tenant",
+    "employee": "Employee",
+    "shift": "Shift Schedule",
+    "parking": "Parking",
+    "complaint": "Complaint"
+  }
+}

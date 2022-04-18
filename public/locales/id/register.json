@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Halaman Masuk",
+    "description": "Deskripsi"
+  },
+  "login": {
+    "title": "Masuk",
+    "greeting": "Selamat datang kembali"
+  },
+  "form": {
+    "name": "nama lengkap",
+    "namePlaceholder": "masukkan nama lengkap",
+    "nameValidationRequired": "nama lengkap wajib diisi",
+    "email": "email",
+    "emailPlaceholder": "masukkan email",
+    "emailValidationRequired": "email wajib diisi",
+    "emailValidation": "maaf format email anda salah",
+    "phone": "nomor handphone",
+    "phonePlaceholder": "masukkan nomor handphone",
+    "phoneValidationRequired": "nomor handphone wajib diisi",
+    "password": "Kata sandi",
+    "passwordPlaceholder": "masukkan kata sandi",
+    "passwordValidation": "maaf kata sandi anda salah ",
+    "passwordValidationRequired": "kata sandi wajib diisi ",
+    "recovery": "Kode pemulihan",
+    "recoveryPlaceholder": "masukkan kode pemulihan",
+    "recoveryValidation": "kode pemulihan anda salah",
+    "recoveryValidationRequired": "kode pemulihan wajib diisi"
+  },
+  "forgot": {
+    "forgot": "lupa",
+    "password": "kata sandi ?",
+    "title": "Lupa Kata Sandi Kamu ?",
+    "desc": "Jangan khawatir! Terima kode pemulihan kata sandi\ndi nomor ponsel atau email Anda yang terdaftar."
+  },
+  "register": {
+    "dontHaveAccount": "Tidak punya akun?",
+    "register": "Daftar"
+  },
+  "button": {
+    "login": "Masuk",
+    "sendForgot": "Kirim kode pemulihan",
+    "next": "selanjutnya",
+    "sendAgain": "kirim kode dalam "
+  },
+  "recovery": {
+    "title": "Masukkan Kode Pemulihan",
+    "desc": "Masukkan kode pemulihan yang kami kirimkan ke email Anda"
+  }
+}

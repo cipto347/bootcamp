@@ -1,8 +1,10 @@
-function LogoKomplekku() {
+import propTypes from "prop-types";
+
+function LogoKomplekku(props) {
+  const { propClass } = props;
   return (
     <svg
-      width="38"
-      height="38"
+      className={propClass}
       viewBox="0 0 38 38"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -50,12 +52,7 @@ function LogoKomplekku() {
         width="38"
         height="38"
       >
-        <rect
-          width="38"
-          height="38"
-          rx="4"
-          fill="url(#paint2_linear_5173_100864)"
-        />
+        <rect width="38" height="38" rx="4" fill="#fff" />
       </mask>
       <g mask="url(#mask1_5173_100864)">
         <path
@@ -147,4 +144,11 @@ function LogoKomplekku() {
   );
 }
 
+LogoKomplekku.propTypes = {
+  propClass: propTypes.string,
+};
+
+LogoKomplekku.defaultProps = {
+  propClass: "w-8 h-8",
+};
 export default LogoKomplekku;

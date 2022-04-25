@@ -44,7 +44,7 @@ function Aside({ collapsed, rtl, toggled, handleToggleSidebar }) {
                 >
                   {item.child.map((subMenu) => (
                     <MenuItem>
-                      <NavLink to="/login">
+                      <NavLink to={subMenu.route}>
                         {t(`label.${subMenu.alias}`)}
                       </NavLink>
                     </MenuItem>

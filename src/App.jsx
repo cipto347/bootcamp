@@ -12,6 +12,10 @@ import DocChart from "./page/documentation/DocChart";
 import Register from "./page/auth/Register";
 import Dashboard from "./page/admin/Dashboard";
 import AdminLayout from "./page/layout/AdminLayout";
+import BillList from "./page/admin/bill/BillList";
+import BillDetail from "./page/admin/bill/BillDetail";
+import BillPrint from "./page/admin/bill/BillPrint";
+import MailList from "./page/admin/mail/MailList";
 
 function ProtectedRoute({ children }) {
   const { authed } = useAuth();
@@ -31,7 +35,15 @@ function App() {
       <Route path="/register" element={<Register />} />
       <Route element={<AdminLayout />}>
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/bill" element={<BillList />} exact />
+        <Route
+          path="/bill/detail/:year/:month"
+          element={<BillDetail />}
+          exact
+        />
+        <Route path="/bill/detail/print" element={<BillPrint />} exact />
         <Route path="/chart" element={<DocChart />} />
+        <Route path="/mail" element={<MailList />} />
       </Route>
       <Route
         path="/profile"

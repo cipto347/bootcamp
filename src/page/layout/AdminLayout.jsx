@@ -27,7 +27,7 @@ function AdminLayout() {
           toggled={toggled}
           handleToggleSidebar={handleToggleSidebar}
         />
-        <main className="lg:p-20 p-4 w-full justify-center items-center">
+        <main className="mt-2 lg:px-20 p-4 w-full justify-center items-center overflow-y-scroll">
           <Outlet />
         </main>
       </div>

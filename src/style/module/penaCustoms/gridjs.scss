@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .gridjs-head button, .gridjs-footer button {
   cursor: pointer;
   background-color: transparent;
@@ -44,22 +46,17 @@
   width: 100%;
   z-index: 5;
   padding: 12px 24px;
-  border-top: 1px solid #e5e7eb;
-  background-color: #fff;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.26);
-  border-radius: 0 0 8px 8px;
-  border-bottom-width: 1px;
 
   &:empty {
     padding: 0;
     border: none;
   }
+
+  @apply bg-base-100
 }
 
 input.gridjs-input {
   outline: none;
-  background-color: #fff;
-  border: 1px solid #d2d6dc;
   border-radius: 5px;
   padding: 10px 13px;
   font-size: 14px;
@@ -68,13 +65,11 @@ input.gridjs-input {
   -moz-appearance: none;
   appearance: none;
 
-  &:focus {
-    @apply border-primary
-  }
+  @apply input shadow focus:outline-none border-neutral mb-2
+
 }
 
 .gridjs-pagination {
-  color: #3d4044;
 
   &::after {
     content: '';
@@ -85,6 +80,7 @@ input.gridjs-input {
   .gridjs-summary {
     float: left;
     margin-top: 5px;
+    @apply bg-neutral opacity-40 text-sm text-center md:text-left w-full md:w-1/2
   }
 
   .gridjs-pages {
@@ -92,8 +88,6 @@ input.gridjs-input {
 
     button {
       padding: 5px 14px;
-      border: 1px solid #d2d6dc;
-      background-color: #fff;
       border-right: none;
       outline: none;
       -webkit-user-select: none;
@@ -101,52 +95,54 @@ input.gridjs-input {
       -ms-user-select: none;
       user-select: none;
 
-      &:focus {
-        box-shadow: 0 0 0 2px rgba(149, 189, 243, 0.5);
-      }
-
       &:hover {
-        background-color: #f7f7f7;
-        color: #3c4257;
         outline: none;
+        @apply text-neutral-content bg-primary-content
       }
 
       &:disabled, &[disabled], &:hover:disabled {
         cursor: default;
-        background-color: #fff;
-        color: #6b7280;
+        background-color: transparent;
+        @apply text-neutral-content opacity-30
       }
 
       &.gridjs-spread {
         cursor: default;
         box-shadow: none;
-        background-color: #fff;
+        @apply text-primary
       }
 
       &.gridjs-currentPage {
-        background-color: #f7f7f7;
         font-weight: bold;
+        @apply text-neutral-content
       }
 
       &:last-child {
         border-bottom-right-radius: 6px;
         border-top-right-radius: 6px;
-        border-right: 1px solid #d2d6dc;
+        @apply text-base
       }
 
       &:first-child {
         border-bottom-left-radius: 6px;
         border-top-left-radius: 6px;
+        @apply text-base
       }
+
+      @apply btn lowercase text-primary btn-sm md:btn-md
     }
+
+    @apply flex w-full justify-center md:flex md:w-1/2 md:justify-end
   }
+
+  @apply items-center flex w-full flex-col md:flex-row
 }
 
 button {
   &.gridjs-sort {
     float: right;
     height: 24px;
-    width: 13px;
+    width: 15px;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -159,19 +155,19 @@ button {
   }
 
   &.gridjs-sort-neutral {
-    opacity: 0.3;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI0MDEuOTk4cHgiIGhlaWdodD0iNDAxLjk5OHB4IiB2aWV3Qm94PSIwIDAgNDAxLjk5OCA0MDEuOTk4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MDEuOTk4IDQwMS45OTg7IgoJIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik03My4wOTIsMTY0LjQ1MmgyNTUuODEzYzQuOTQ5LDAsOS4yMzMtMS44MDcsMTIuODQ4LTUuNDI0YzMuNjEzLTMuNjE2LDUuNDI3LTcuODk4LDUuNDI3LTEyLjg0NwoJCQljMC00Ljk0OS0xLjgxMy05LjIyOS01LjQyNy0xMi44NUwyMTMuODQ2LDUuNDI0QzIxMC4yMzIsMS44MTIsMjA1Ljk1MSwwLDIwMC45OTksMHMtOS4yMzMsMS44MTItMTIuODUsNS40MjRMNjAuMjQyLDEzMy4zMzEKCQkJYy0zLjYxNywzLjYxNy01LjQyNCw3LjkwMS01LjQyNCwxMi44NWMwLDQuOTQ4LDEuODA3LDkuMjMxLDUuNDI0LDEyLjg0N0M2My44NjMsMTYyLjY0NSw2OC4xNDQsMTY0LjQ1Miw3My4wOTIsMTY0LjQ1MnoiLz4KCQk8cGF0aCBkPSJNMzI4LjkwNSwyMzcuNTQ5SDczLjA5MmMtNC45NTIsMC05LjIzMywxLjgwOC0xMi44NSw1LjQyMWMtMy42MTcsMy42MTctNS40MjQsNy44OTgtNS40MjQsMTIuODQ3CgkJCWMwLDQuOTQ5LDEuODA3LDkuMjMzLDUuNDI0LDEyLjg0OEwxODguMTQ5LDM5Ni41N2MzLjYyMSwzLjYxNyw3LjkwMiw1LjQyOCwxMi44NSw1LjQyOHM5LjIzMy0xLjgxMSwxMi44NDctNS40MjhsMTI3LjkwNy0xMjcuOTA2CgkJCWMzLjYxMy0zLjYxNCw1LjQyNy03Ljg5OCw1LjQyNy0xMi44NDhjMC00Ljk0OC0xLjgxMy05LjIyOS01LjQyNy0xMi44NDdDMzM4LjEzOSwyMzkuMzUzLDMzMy44NTQsMjM3LjU0OSwzMjguOTA1LDIzNy41NDl6Ii8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+");
+    opacity: 1;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.18567 13.1691L9.58138 14.5648C9.70029 14.6837 9.86014 14.75 10.0278 14.75C10.1954 14.75 10.3553 14.6837 10.4742 14.5648L11.8699 13.1691C12.1174 12.9215 12.1174 12.5219 11.8699 12.2763C11.7471 12.1535 11.5853 12.0911 11.4235 12.0911C11.2617 12.0911 11.0999 12.1535 10.9771 12.2763L10.6516 12.6019V7.87378C10.6516 7.52875 10.3728 7.25 10.0278 7.25C9.68275 7.25 9.404 7.52875 9.404 7.87378V12.6019L9.07846 12.2763C8.8309 12.0288 8.43129 12.0288 8.18567 12.2763C7.93811 12.5239 7.93811 12.9235 8.18567 13.1691Z' fill='%23CCCDCE'/%3E%3Cpath d='M7.87651 2.8309L6.47841 1.43519C6.3593 1.31628 6.19918 1.25 6.03125 1.25C5.86332 1.25 5.7032 1.31628 5.58409 1.43519L4.18599 2.8309C3.938 3.07846 3.938 3.47807 4.18599 3.72368C4.30901 3.84649 4.47108 3.90887 4.63315 3.90887C4.79522 3.90887 4.95729 3.84649 5.08031 3.72368L5.4064 3.39815V8.12622C5.4064 8.47125 5.68563 8.75 6.03125 8.75C6.37687 8.75 6.6561 8.47125 6.6561 8.12622V3.39815L6.98219 3.72368C7.23018 3.97125 7.63048 3.97125 7.87651 3.72368C8.1245 3.47612 8.1245 3.07651 7.87651 2.8309Z' fill='%23CCCDCE'/%3E%3C/svg%3E%0A");
     background-position-y: center;
   }
 
   &.gridjs-sort-asc {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIyOTIuMzYycHgiIGhlaWdodD0iMjkyLjM2MXB4IiB2aWV3Qm94PSIwIDAgMjkyLjM2MiAyOTIuMzYxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyOTIuMzYyIDI5Mi4zNjE7IgoJIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik0yODYuOTM1LDE5Ny4yODdMMTU5LjAyOCw2OS4zODFjLTMuNjEzLTMuNjE3LTcuODk1LTUuNDI0LTEyLjg0Ny01LjQyNHMtOS4yMzMsMS44MDctMTIuODUsNS40MjRMNS40MjQsMTk3LjI4NwoJCUMxLjgwNywyMDAuOTA0LDAsMjA1LjE4NiwwLDIxMC4xMzRzMS44MDcsOS4yMzMsNS40MjQsMTIuODQ3YzMuNjIxLDMuNjE3LDcuOTAyLDUuNDI1LDEyLjg1LDUuNDI1aDI1NS44MTMKCQljNC45NDksMCw5LjIzMy0xLjgwOCwxMi44NDgtNS40MjVjMy42MTMtMy42MTMsNS40MjctNy44OTgsNS40MjctMTIuODQ3UzI5MC41NDgsMjAwLjkwNCwyODYuOTM1LDE5Ny4yODd6Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+");
+    background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.87651 1.8309L2.47841 0.435185C2.3593 0.316277 2.19918 0.25 2.03125 0.25C1.86332 0.25 1.7032 0.316277 1.58409 0.435185L0.18599 1.8309C-0.0619968 2.07846 -0.0619968 2.47807 0.18599 2.72368C0.309008 2.84649 0.471078 2.90887 0.633149 2.90887C0.795219 2.90887 0.957289 2.84649 1.08031 2.72368L1.4064 2.39815V7.12622C1.4064 7.47125 1.68563 7.75 2.03125 7.75C2.37687 7.75 2.6561 7.47125 2.6561 7.12622V2.39815L2.98219 2.72368C3.23018 2.97125 3.63048 2.97125 3.87651 2.72368C4.1245 2.47612 4.1245 2.07651 3.87651 1.8309Z' fill='%23CCCDCE'/%3E%3C/svg%3E%0A");
     background-position-y: 35%;
     background-size: 10px;
   }
 
   &.gridjs-sort-desc {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIyOTIuMzYycHgiIGhlaWdodD0iMjkyLjM2MnB4IiB2aWV3Qm94PSIwIDAgMjkyLjM2MiAyOTIuMzYyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyOTIuMzYyIDI5Mi4zNjI7IgoJIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik0yODYuOTM1LDY5LjM3N2MtMy42MTQtMy42MTctNy44OTgtNS40MjQtMTIuODQ4LTUuNDI0SDE4LjI3NGMtNC45NTIsMC05LjIzMywxLjgwNy0xMi44NSw1LjQyNAoJCUMxLjgwNyw3Mi45OTgsMCw3Ny4yNzksMCw4Mi4yMjhjMCw0Ljk0OCwxLjgwNyw5LjIyOSw1LjQyNCwxMi44NDdsMTI3LjkwNywxMjcuOTA3YzMuNjIxLDMuNjE3LDcuOTAyLDUuNDI4LDEyLjg1LDUuNDI4CgkJczkuMjMzLTEuODExLDEyLjg0Ny01LjQyOEwyODYuOTM1LDk1LjA3NGMzLjYxMy0zLjYxNyw1LjQyNy03Ljg5OCw1LjQyNy0xMi44NDdDMjkyLjM2Miw3Ny4yNzksMjkwLjU0OCw3Mi45OTgsMjg2LjkzNSw2OS4zNzd6Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+");
+    background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.185673 6.1691L1.58138 7.56481C1.70029 7.68372 1.86014 7.75 2.02778 7.75C2.19542 7.75 2.35526 7.68372 2.47417 7.56481L3.86988 6.1691C4.11745 5.92154 4.11745 5.52193 3.86988 5.27632C3.74708 5.15351 3.58528 5.09113 3.42349 5.09113C3.2617 5.09113 3.0999 5.15351 2.9771 5.27632L2.65156 5.60185V0.873782C2.65156 0.528752 2.37281 0.25 2.02778 0.25C1.68275 0.25 1.404 0.528752 1.404 0.873782V5.60185L1.07846 5.27632C0.830897 5.02875 0.431287 5.02875 0.185673 5.27632C-0.0618908 5.52388 -0.0618908 5.92349 0.185673 6.1691Z' fill='%23CCCDCE'/%3E%3C/svg%3E%0A");
     background-position-y: 65%;
     background-size: 10px;
   }
@@ -198,9 +194,7 @@ table.gridjs-table {
 
 td {
   &.gridjs-td {
-    border: 1px solid #e5e7eb;
     padding: 12px 24px;
-    background-color: #fff;
     box-sizing: content-box;
 
     &:first-child {
@@ -210,6 +204,8 @@ td {
     &:last-child {
       border-right: none;
     }
+
+    @apply bg-neutral
   }
 
   &.gridjs-message {
@@ -220,9 +216,7 @@ td {
 th {
   &.gridjs-th {
     position: relative;
-    color: #6b7280;
-    background-color: #f9fafb;
-    border: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
     border-top: none;
     padding: 14px 24px;
     -webkit-user-select: none;
@@ -240,6 +234,8 @@ th {
       width: 100%;
       float: left;
     }
+
+    @apply bg-neutral text-neutral-content text-base
   }
 
   &.gridjs-th-sort {
@@ -301,24 +297,37 @@ th {
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.26);
-  border-radius: 8px 8px 0 0;
   display: block;
   border-top-width: 1px;
   border-color: #e5e7eb;
+  border-radius: 16px;
 
   &:nth-last-of-type(2) {
     border-radius: 8px;
     border-bottom-width: 1px;
   }
+
+  @apply bg-transparent mb-1 shadow
 }
 
 .gridjs-search {
   float: left;
+  @apply relative stroke-primary lg:w-1/3 w-full
+}
+
+.gridjs-search:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  height: 52px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='%23EE3124' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' /%3E%3C/svg%3E") center / contain no-repeat;
 }
 
 .gridjs-search-input {
-  width: 250px;
+  @apply w-full
 }
 
 .gridjs-loading-bar {
@@ -373,6 +382,27 @@ th {
   &:hover {
     cursor: ew-resize;
     background-color: #9bc2f7;
+  }
+}
+
+.gridjs-search {
+  input[type=text]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  input[type=text]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
   }
 }
 

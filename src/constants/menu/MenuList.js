@@ -16,7 +16,7 @@ const MenuList = [
     child: [
       {
         name: "List tagihan",
-        route: "",
+        route: "/bill",
         alias: "listBill",
         child: [],
         isHide: false,
@@ -72,7 +72,7 @@ const MenuList = [
     icon: "email",
     alias: "email",
     isHide: false,
-    route: "",
+    route: "/mail",
     child: [],
   },
   {

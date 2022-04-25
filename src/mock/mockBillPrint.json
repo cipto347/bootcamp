@@ -1,0 +1,35 @@
+{
+  "sender": "Apartemen one",
+  "senderAddress": " Jl. HR Rasuna Said One Kav No.62, RT.18/RW.2, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12920",
+  "senderEmail": "apartemen.one@gmail.com",
+  "senderContact": "0987655433222",
+  "receiver": "Hanan Aydan",
+  "receiverAddress": " Apartemen one No. 3 - Tipe 2 Kamar Jl. HR Rasuna Said One Kav No.62, RT.18/RW.2, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12920",
+  "receiverEmail": "hanan.aydan@gmail.com",
+  "receiverContact": "081397979797",
+  "invoiceNumber": "001/002",
+  "invoiceDate": "1 Januari 2021",
+  "invoiceItem": {
+    "subtotal": "5500000",
+    "tax": "275000",
+    "taxPercent": "5",
+    "total": "5775000",
+    "items": [
+      {
+        "id": 1,
+        "name": "Harga Sewa",
+        "price": "4500000"
+      },
+      {
+        "id": 2,
+        "name": "Tagihan IPL",
+        "price": "500000"
+      },
+      {
+        "id": 3,
+        "name": "Denda Keterlambatan Pembayaran (5%)",
+        "price": "500000"
+      }
+    ]
+  }
+}

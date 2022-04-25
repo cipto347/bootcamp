@@ -1,32 +1,42 @@
 import { Grid } from "gridjs-react";
-import { faker } from "@faker-js/faker";
+import propTypes from "prop-types";
 
 // grid css
 import "../../../style/module/penaCustoms/gridjs.scss";
 
-function GridTable() {
+function GridTable(props) {
+  const { propsServer, propsColumns, propsLanguage, children, propsAddButton } =
+    props;
   return (
-    <div>
+    <div className="lg:relative">
+      {propsAddButton && children}
+
       <Grid
-        data={Array(50)
-          .fill()
-          .map(() => [
-            faker.name.findName(),
-            faker.internet.email(),
-            faker.name.firstName(),
-          ])}
-        columns={["Name", "Email", "Title"]}
+        server={propsServer}
+        columns={propsColumns}
         sort
-        fixedHeader
         search
+        pagination
+        fixedHeader
+        autoWidth
+        language={propsLanguage}
         resizable
-        pagination={{
-          enabled: true,
-          limit: 20,
-        }}
       />
     </div>
   );
 }
+
+GridTable.propTypes = {
+  propsServer: propTypes.object.isRequired,
+  propsColumns: propTypes.array.isRequired,
+  propsLanguage: propTypes.object.isRequired,
+  children: propTypes.element,
+  propsAddButton: propTypes.bool,
+};
+
+GridTable.defaultProps = {
+  children: <div />,
+  propsAddButton: false,
+};
 
 export default GridTable;

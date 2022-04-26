@@ -46,7 +46,7 @@ const MenuList = [
     child: [
       {
         name: "List Info",
-        route: "",
+        route: "/info",
         alias: "listInfo",
         child: [],
         isHide: false,

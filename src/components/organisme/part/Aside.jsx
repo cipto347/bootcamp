@@ -27,7 +27,7 @@ function Aside({ collapsed, rtl, toggled, handleToggleSidebar }) {
       <SidebarContent>
         <Menu>
           {MenuList.map((item) => (
-            <div>
+            <div key={item.alias}>
               {item.child.length > 0 ? (
                 <SubMenu
                   title={t(`label.${item.alias}`)}
@@ -43,7 +43,7 @@ function Aside({ collapsed, rtl, toggled, handleToggleSidebar }) {
                   }
                 >
                   {item.child.map((subMenu) => (
-                    <MenuItem>
+                    <MenuItem key={subMenu.alias}>
                       <NavLink to={subMenu.route}>
                         {t(`label.${subMenu.alias}`)}
                       </NavLink>
@@ -55,6 +55,7 @@ function Aside({ collapsed, rtl, toggled, handleToggleSidebar }) {
                   icon={
                     <IconList
                       name={item.icon}
+                      key={item.alias}
                       propClass={
                         location.pathname === item.route
                           ? "text-primary"

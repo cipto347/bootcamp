@@ -6,7 +6,6 @@ import GridTable from "../../../components/organisme/table/grid";
 import CapitalFirstLetter, {
   dateFormat,
 } from "../../../services/helpers/TextConverter";
-import BtnBack from "../../../components/atom/ButtonBack";
 import BtnBackModal from "../../../components/atom/button/ButtonBackModal";
 import InputText from "../../../components/atom/input/Text";
 import InputTextArea from "../../../components/atom/input/TextArea";

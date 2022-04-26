@@ -33,6 +33,7 @@
   "react-mask-field": "^3.0.1",
   "react-pro-sidebar": "^0.7.1",
   "react-qr-code": "^2.0.5",
+  "react-quill": "^2.0.0-beta.4",
   "react-router-dom": "^6.2.2",
   "sass": "^1.49.9",
   "vite": "^2.8.0",

@@ -16,6 +16,8 @@ import BillList from "./page/admin/bill/BillList";
 import BillDetail from "./page/admin/bill/BillDetail";
 import BillPrint from "./page/admin/bill/BillPrint";
 import MailList from "./page/admin/mail/MailList";
+import InfoList from "./page/admin/info/infoList";
+import InfoTenant from "./page/admin/info/infoTenant";
 
 function ProtectedRoute({ children }) {
   const { authed } = useAuth();
@@ -44,6 +46,8 @@ function App() {
         <Route path="/bill/detail/print" element={<BillPrint />} exact />
         <Route path="/chart" element={<DocChart />} />
         <Route path="/mail" element={<MailList />} />
+        <Route path="/info" element={<InfoList />} exact />
+        <Route path="/info/tenant" element={<InfoTenant />} exact />
       </Route>
       <Route
         path="/profile"

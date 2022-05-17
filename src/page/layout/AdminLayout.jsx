@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
-import PartHeader from "../../components/organisme/part/Header";
+// import PartHeader from "../../components/organisme/part/Header";
+import PartHeader from "../../components/organisme/part/Header2";
 
 function AdminLayout() {
   return (

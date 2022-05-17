@@ -1,29 +1,30 @@
 @import '../helpers/_function';
 @import '../settings/_variable';
 
-.headline-dgh-1 {
-  font-family: $font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: em(32);
-  line-height: em(37);
-  letter-spacing: em(0.12);
-}
-
-.headline-dgh-1-card {
-  font-family: $font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: em(32);
-  letter-spacing: em(0.12);
-}
-
-.headline-dgh-2-card {
+.text-tagging {
   font-family: $font;
   font-style: normal;
   font-weight: 500;
-  font-size: em(28);
-  letter-spacing: em(0.12);
+  font-size: em(12);
+  line-height: em(14);
+  letter-spacing: 0.1em;
+}
+
+.text-title {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: em(34);
+  letter-spacing: 0.0075em;
+  line-height: em(39);
+}
+
+.text-description {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: em(16);
+  line-height: em(22);
 }
 
 .headline-1 {

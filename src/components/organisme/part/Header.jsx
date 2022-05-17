@@ -1,12 +1,8 @@
-import propTypes from "prop-types";
 import { useTranslation } from "react-i18next";
-import LogoKomplekku from "../../atom/logo/Komplekku";
 import BtnTranslate from "../../atom/ButtonTranslate";
-import BtnThemeChanger from "../../atom/button/ThemeChanger";
 
-function PartHeader(props) {
+function PartHeader() {
   const { t } = useTranslation("header");
-  const { themeChanger, theme } = props;
   return (
     <div className="navbar bg-base-100 shadow">
       <div className="navbar-start">
@@ -32,7 +28,6 @@ function PartHeader(props) {
           </figure>
         </label>
         <div className="btn btn-ghost flex justify-center items-center gap-x-4 hover:bg-transparent">
-          <LogoKomplekku />
           <span>KOMPLEKKU</span>
         </div>
       </div>
@@ -92,7 +87,6 @@ function PartHeader(props) {
           </svg>
         </button>
         <BtnTranslate />
-        <BtnThemeChanger changeTheme={themeChanger} theme={theme} />
         <div className="dropdown dropdown-end w-52">
           <label
             tabIndex="0"
@@ -128,8 +122,4 @@ function PartHeader(props) {
     </div>
   );
 }
-PartHeader.propTypes = {
-  themeChanger: propTypes.func.isRequired,
-  theme: propTypes.string.isRequired,
-};
 export default PartHeader;

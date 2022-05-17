@@ -62,3 +62,5 @@ rules:
   react/void-dom-elements-no-children: off
   react/jsx-no-bind: off
   jsx-a11y/no-noninteractive-tabindex: off
+  react-hooks/exhaustive-deps: off
+  no-underscore-dangle: off

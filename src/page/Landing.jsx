@@ -1,20 +1,15 @@
-// import { useState } from "react";
-import "./Home.css";
 import CardLanding from "../components/atom/image/CardLanding";
-import Footer from "../components/organisme/part/Footer";
 import CardStartQuiz from "../components/organisme/CardStartQuiz";
 import LandingCreate from "../components/organisme/landing/Create";
-import Landing from "./Landing";
-import Hero from "../components/organisme/hero/Hero";
+import Footer from "../components/organisme/part/Footer";
+import PartHeader from "../components/organisme/part/Header";
 
-function Home() {
-  // const [count, setCount] = useState(0);
-
+function Landing() {
   return (
     <div className="h-screen" data-theme="telkom">
-      {/* <PartHeader /> */}
+      <PartHeader />
+      <img src="/src/assets/img/imagee.jpg" alt="" />
       <div className="flex main-layout">
-        <Hero />
         <main className="mt-2 lg:px-20 p-4 w-full justify-center items-center overflow-y-scroll">
           <Landing />
           <LandingCreate className="mb-10" />
@@ -29,4 +24,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Landing;

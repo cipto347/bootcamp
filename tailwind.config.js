@@ -20,7 +20,7 @@ module.exports = {
     themes: [
       {
         telkom: {
-          primary: "#EE3124",
+          primary: "#314D64",
           secondary: "#377CFB",
           accent: "#EA5234",
           neutral: "#FFFFFF",

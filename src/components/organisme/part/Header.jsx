@@ -27,8 +27,8 @@ function PartHeader() {
             </svg>
           </figure>
         </label>
-        <div className="btn btn-ghost flex justify-center items-center gap-x-4 hover:bg-transparent">
-          <span>KOMPLEKKU</span>
+        <div className="btn btn-ghost flex justify-center items-center pl-60 gap-x-4 bg-transparent">
+          <img src="../../../../public/logo/logo_fill.svg" alt="profile" />
         </div>
       </div>
       <div className="navbar-end py-1 hidden lg:inline-flex gap-2">

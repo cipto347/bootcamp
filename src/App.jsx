@@ -6,11 +6,10 @@ import useAuth from "./services/auth/UseAuth";
 
 // pages
 import Home from "./page/Home";
-// import AdminLayout from "./page/layout/AdminLayout";
 // import ImageLanding from "./components/atom/image/Landing";
-import AdminLayout from "./page/layout/AdminLayout";
 import LandingCreate from "./components/organisme/landing/Create";
 import Summary from "./page/Summary";
+import AdminLayout from "./page/layout/Layout";
 
 function ProtectedRoute({ children }) {
   const { authed } = useAuth();
@@ -28,9 +27,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
 
-      {/* <Route element={<ImageLanding />} path="/halo" /> */}
-
-      <Route element={<LandingCreate />} path="/landing" />
+      <Route element={<LandingCreate />} path="/landing-create" />
       <Route element={<Summary />} path="/summary" />
       <Route element={<AdminLayout />}>
         <Route path="/" element={<Home />} />

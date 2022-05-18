@@ -31,7 +31,7 @@ function PartHeader() {
           <img src="/src/assets/img/logo/logo-horizontal.png" alt="profile" />
         </div>
       </div>
-      <div className="navbar-end py-1 hidden lg:inline-flex gap-2 justify-center items-center mr-20">
+      <div className="navbar-end py-2 hidden lg:inline-flex justify-center items-center mr-20">
         <Link className="text-white pr-12" to="/">
           About Us
         </Link>
@@ -43,13 +43,13 @@ function PartHeader() {
         </Link>
         <button
           type="button"
-          className="btn btn-tp btn-ghost text-white border-white mr-2.5 rounded-md"
+          className="btn btn-tp btn-ghost text-white border-white mr-2.5 rounded-md w-28 h-9"
         >
           LOGIN
         </button>
         <button
           type="button"
-          className="btn btn-gradient text-white border-none rounded-md"
+          className="btn btn-gradient text-white border-none rounded-md w-28 h-5"
         >
           SIGN UP
         </button>

@@ -1,3 +1,5 @@
+$colorGradient: linear-gradient(180deg, #AA80F9 0%, #756CE0 100%);
+
 .g-tosca {
   background: linear-gradient(214.03deg, #2BADB4 0%, #6ED1B1 147.2%);
   transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -7,6 +9,15 @@
   background: linear-gradient(180deg, #AA80F9 0%, #756CE0 100%);
 }
 
+.btn-white {
+  border-color: linear-gradient(180deg, #AA80F9 0%, #756CE0 100%);
+}
+
 .btn-tp {
   background-color: transparent;
+}
+
+.text-gradient {
+  --tw-text-opacity: 1 !important;
+  color: linear-gradient(180deg, #AA80F9 0%, #756CE0 100%);
 }

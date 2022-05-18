@@ -27,13 +27,68 @@
   line-height: em(22);
 }
 
+.text-main {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: em(24);
+  line-height: em(36);
+}
+
+.text-question {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: em(36);
+}
+
+.text-option {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: em(10);
+  line-height: em(11);
+}
+
+.text-content-option {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: em(18);
+}
+
+.text-timer {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: em(16);
+}
+
+.text-survey {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: em(36);
+}
+
+.text-option-survey {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: em(28);
+}
+
 .headline-1 {
   font-family: $font;
   font-style: normal;
-  font-weight: bold;
-  font-size: em(24);
-  line-height: em(28);
-  letter-spacing: em(0.12);
+  font-weight: 500;
+  font-size: em(14);
+  line-height: em(18);
 }
 
 .headline-2 {

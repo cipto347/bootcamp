@@ -11,6 +11,7 @@ import LandingCreate from "./components/organisme/landing/Create";
 import Summary from "./page/Summary";
 import AdminLayout from "./page/layout/Layout";
 import SurveyPreview from "./page/SurveyPreview";
+import Survey from "./page/Survey";
 
 function ProtectedRoute({ children }) {
   const { authed } = useAuth();
@@ -30,6 +31,7 @@ function App() {
 
       <Route element={<LandingCreate />} path="/landing-create" />
       <Route element={<Summary />} path="/summary" />
+      <Route element={<Survey />} path="/survey" />
       <Route element={<AdminLayout />}>
         <Route path="/" element={<Home />} />
       </Route>

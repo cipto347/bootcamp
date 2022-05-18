@@ -1,9 +1,10 @@
-import React from "react";
 import propTypes from "prop-types";
 
 function TextTagging(props) {
   const { propsText } = props;
-  return <article className="text-tagging">{propsText}</article>;
+  return (
+    <article className="text-tagging text-Lightpurple">{propsText}</article>
+  );
 }
 
 TextTagging.propTypes = {

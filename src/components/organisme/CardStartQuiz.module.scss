@@ -1,0 +1,66 @@
+.cardWrapper {
+    width: 712px;
+    height: 482px;
+    // height: 100%;
+    background-color: #FFFFFF;
+    // background: #FFFFFF;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+
+    .cardBanner {
+        width: 100%;
+        height: 178px;
+        margin-bottom: 21px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    section {
+        padding: 0 25px 22px 24px;
+
+        .quizTitel {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 32px;
+            letter-spacing: 0.0075em;
+            color: #313466;
+            margin-bottom: 8px;
+        }
+
+        .quizDescription {
+            margin-bottom: 20px;
+        }
+
+        .question {
+            width: 100%;
+            height: 129px;
+            background: #FAFAFA;
+            border-radius: 10px;
+            margin-bottom: 28px;
+        }
+        .foot{
+            display: flex;
+            flex-direction: row;
+          .buttonWrapper{
+              margin-left: auto;
+            button {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                width: 123px;
+                height: 36px;
+                background: linear-gradient(180deg, #AA80F9 0%, #756CE0 100%);
+                border-radius: 6px;
+                color: white;
+            }
+          }
+        }
+    }
+}

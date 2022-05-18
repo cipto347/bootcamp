@@ -4,19 +4,17 @@ import ImagesLoader from "../../atom/images/ImagesLoader";
 
 function CardSection() {
   return (
-    <section className="flex justify-center gap-10 mt-8">
-      {/* <section className="flex flex-row justify-center flex-wrap gap-4 mt-8"> */}
+    <section className="flex flex-row flex-wrap mt-8">
       {CreateList &&
         CreateList.map((item) => (
-          <div
-            className="card w-1/4 bg-base-100 shadow-xl rounded-none"
-            key={item.id}
-          >
-            <ImagesLoader imageUrl={item.imageUrl} />
-            <div className="card-body bg-card-body relative">
-              <IconLoader imageIcon={item.icon} />
-              <h2 className="card-title text-white">{item.title}</h2>
-              <p className="text-white">{item.desc}</p>
+          <div key={item.id} className="p-2 w-1/3 ">
+            <div className="card bg-base-100 h-[32rem] shadow-xl rounded-none">
+              <ImagesLoader imageUrl={item.imageUrl} />
+              <div className="card-body bg-card-body pt-12 relative">
+                <IconLoader imageIcon={item.icon} />
+                <h2 className="card-title text-white">{item.title}</h2>
+                <p className="text-white">{item.desc}</p>
+              </div>
             </div>
           </div>
         ))}

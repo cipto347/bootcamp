@@ -26,7 +26,11 @@ function Hero() {
               </article>
             </div>
           </div>
-          <img src="/src/assets/img/imagee.jpg" alt="" />
+          <img
+            src="/src/assets/img/imagee.jpg"
+            alt=""
+            className="object-cover w-full"
+          />
         </main>
       </div>
     </div>

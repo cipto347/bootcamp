@@ -3,7 +3,7 @@ import Dot from "../../../asset/landing/Ellipse 18.png";
 
 function Footer() {
   return (
-    <div className={`lg:px-20 p-4 w-full h-20 bg-smoke ${styles.wrapper}`}>
+    <footer className={`lg:px-20 p-4 w-full h-20 bg-smoke ${styles.wrapper}`}>
       <div className={styles.left}>
         <span style={{ textDecoration: "none" }} className="label-1">
           Copyright © 2021 Kutanya
@@ -20,7 +20,7 @@ function Footer() {
           Term of Use
         </span>
       </div>
-    </div>
+    </footer>
   );
 }
 

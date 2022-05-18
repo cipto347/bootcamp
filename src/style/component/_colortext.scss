@@ -1,0 +1,12 @@
+@import '../settings/_variable';
+
+.text-Lightpurple{
+    color: $anotherLightPurple;
+}
+.text-darkPurple{
+    color: $DarkBlue;
+}
+.text-lighterPurple{
+    opacity: 0.7;
+    color: $anotherLightPurple;
+}

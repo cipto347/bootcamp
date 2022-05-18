@@ -4,7 +4,7 @@ import propTypes from "prop-types";
 function IconLoader(props) {
   const { imageIcon } = props;
   return (
-    <figure className="bg-primary rounded-full h-12 w-12 absolute -top-5">
+    <figure className="bg-LightPurple rounded-full h-12 w-12 absolute -top-5">
       {imageIcon === "pencil" && (
         <svg
           width="24"

@@ -1,11 +1,11 @@
-import React from "react";
 import CreateList from "../../../constants/createList.json";
 import IconLoader from "../../atom/images/IconLoader";
 import ImagesLoader from "../../atom/images/ImagesLoader";
 
 function CardSection() {
   return (
-    <section className="flex flex-row justify-center flex-wrap gap-4 mt-8">
+    <section className="flex justify-center gap-10 mt-8">
+      {/* <section className="flex flex-row justify-center flex-wrap gap-4 mt-8"> */}
       {CreateList &&
         CreateList.map((item) => (
           <div

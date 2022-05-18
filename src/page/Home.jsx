@@ -4,6 +4,7 @@ import PartHeader from "../components/organisme/part/Header";
 import CardLanding from "../components/atom/image/CardLanding";
 import Footer from "../components/organisme/part/Footer";
 import CardStartQuiz from "../components/organisme/CardStartQuiz";
+import LandingCreate from "../components/organisme/landing/Create";
 
 function Home() {
   // const [count, setCount] = useState(0);
@@ -13,6 +14,7 @@ function Home() {
       <PartHeader />
       <div className="flex main-layout">
         <main className="mt-2 lg:px-20 p-4 w-full justify-center items-center overflow-y-scroll">
+          <LandingCreate className="mb-10" />
           <CardLanding cardType="various" />
           <CardLanding cardType="any" />
           <CardLanding cardType="score" />

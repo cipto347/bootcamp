@@ -1,0 +1,34 @@
+.cardWrapper{
+    width: 100%;
+    height: 360px;
+    position: relative;
+    margin-bottom: 20px;
+    .imageVarious{
+        position: absolute;
+        z-index: 1;
+        top: 52%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+    .imageAny{
+        position: absolute;
+        z-index: 1;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+    .imageScore{
+        position: absolute;
+        z-index: 1;
+        // bottom: 0;
+        top: 56%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+    .footer{
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        bottom: 0;
+    }
+}

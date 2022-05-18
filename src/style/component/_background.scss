@@ -11,7 +11,29 @@
 [data-theme=telkom] .bg-card {
   background-color: #FCFBFC !important;
 }
+.bg-DarkPurple {
+  background-color: $DarkPurple;
+}
+ 
+.bg-LightPurple {
+  background-color: $LightPurple;
+}
+.bg-DarkNavy{
+  background-color: $DarkNavy;
+}
+.bg-LightNavy{
+  background-color: $LightNavy;
+}
+.bg-DarkBlue{
+  background-color: $DarkBlue;
+}
+.bg-LightBlue{
+  background-color: $LightBlue;
+}
+.bg-smoke{
+  background-color: $smoke;
+}
 
 .bg-card-body {
-  background-color: $DarkPurple;
+  background-color: $DarkBlue;
 }

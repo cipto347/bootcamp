@@ -7,8 +7,8 @@ ChartJS.register(ArcElement, Legend);
 export const data = {
   datasets: [
     {
-      data: [33, 33],
-      backgroundColor: ["Purple", "Black"],
+      data: [25, 25, 25, 25],
+      backgroundColor: ["#5C2D93", "#712085", "#BF58A7", "#DA5C8C"],
     },
   ],
 };

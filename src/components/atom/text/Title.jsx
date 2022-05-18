@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 function TextTitle(props) {
   const { title } = props;
   return (
-    <span className="lg:headline-1 headline-2 mb-4 text-darkPurple">
+    <span className="lg:headline-1 headline-2 pb-4 text-darkPurple px-32 text-center">
       {title}
     </span>
   );

@@ -24,16 +24,16 @@ function Home() {
                 <CardLanding cardType="various" />
               </div>
               <div className="w-1/2 flex flex-col flex-center">
-                <TextTagging propsText="CREATE" />
-                <TextTitle title="Make your own Quiz" />
-                <TextDescription desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
+                <TextTagging propsText="CUSTOMIZE" />
+                <TextTitle title="Various Types of Questions " />
+                <TextDescription desc="You can choose various types of questions such as multiple choice, description answers, scales, picture answers and many others." />
               </div>
             </div>
             <div className="flex flex-row w-full">
               <div className="w-1/2 flex flex-col flex-center">
-                <TextTagging propsText="CREATE" />
-                <TextTitle title="Make your own Quiz" />
-                <TextDescription desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
+                <TextTagging propsText="FLEXIBLE" />
+                <TextTitle title="Works On Any Device" />
+                <TextDescription desc="You can choose various types of questions such as multiple choice, description answers, scales, picture answers and many others." />
               </div>
               <div className="w-1/2">
                 <CardLanding cardType="any" />
@@ -44,9 +44,9 @@ function Home() {
                 <CardLanding cardType="score" />
               </div>
               <div className="w-1/2 flex flex-col flex-center">
-                <TextTagging propsText="CREATE" />
-                <TextTitle title="Make your own Quiz" />
-                <TextDescription desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
+                <TextTagging propsText="REPORT" />
+                <TextTitle title="Check Score of Your Respondents in RealTime" />
+                <TextDescription desc="You can choose various types of questions such as multiple choice, description answers, scales, picture answers and many others." />
               </div>
             </div>
           </div>

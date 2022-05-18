@@ -10,6 +10,7 @@ import Home from "./page/Home";
 import LandingCreate from "./components/organisme/landing/Create";
 import Summary from "./page/Summary";
 import AdminLayout from "./page/layout/Layout";
+import SurveyPreview from "./page/SurveyPreview";
 
 function ProtectedRoute({ children }) {
   const { authed } = useAuth();
@@ -40,6 +41,7 @@ function App() {
           </ProtectedRoute>
         }
       />
+      <Route element={<SurveyPreview />} path="/preview-survey" />
       <Route path="*" element={<NoMatch />} />
     </Routes>
   );

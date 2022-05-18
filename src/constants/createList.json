@@ -1,0 +1,25 @@
+
+
+[
+  {
+    "id" : "1",
+    "imageUrl": "Create",
+    "icon": "pencil",
+    "title": "Create your quiz",
+    "desc": "Create your quiz easily and quickly using advanced features such as scoring each question with various types of questions "
+  },
+  {
+    "id" : "2",
+   "imageUrl": "Publish",
+    "icon": "link",
+    "title": "Publish Your Quiz",
+    "desc": "Publish & share your quiz to your students or to your closest friends using one link & QR Code"
+  },
+  {
+    "id" : "3",
+    "imageUrl": "Calculate",
+    "icon": "pie",
+    "title": "Calculate Score",
+    "desc": "kutanya will show the respondent's score at the end of the quiz session"
+  }
+]

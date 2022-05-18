@@ -1,4 +1,5 @@
-@import '../settings/variable';
+@import '../settings/_variable';
+
 [data-theme=telkom] .bg-input {
   @apply bg-white
 }
@@ -33,3 +34,6 @@
   background-color: $smoke;
 }
 
+.bg-card-body {
+  background-color: $DarkBlue;
+}

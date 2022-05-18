@@ -1,0 +1,396 @@
+.gridjs-head button, .gridjs-footer button {
+  cursor: pointer;
+  background-color: transparent;
+  background-image: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.gridjs-temp {
+  position: relative;
+}
+
+.gridjs-head {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 5px 1px;
+}
+
+.gridjs-head::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.gridjs-head:empty {
+  padding: 0;
+  border: none;
+}
+
+.gridjs-container {
+  overflow: hidden;
+  display: inline-block;
+  padding: 2px;
+  color: #000;
+  position: relative;
+  z-index: 0;
+}
+
+.gridjs-footer {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  padding: 12px 24px;
+  @apply bg-base-100;
+}
+
+.gridjs-footer:empty {
+  padding: 0;
+  border: none;
+}
+
+input.gridjs-input {
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 13px;
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  @apply input shadow focus:outline-none border-neutral mb-2;
+}
+
+.gridjs-pagination {
+  @apply items-center flex w-full flex-col md:flex-row;
+}
+
+.gridjs-pagination::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.gridjs-pagination .gridjs-summary {
+  float: left;
+  margin-top: 5px;
+  @apply bg-neutral opacity-40 text-sm text-center md:text-left w-full md:w-1/2;
+}
+
+.gridjs-pagination .gridjs-pages {
+  float: right;
+  @apply flex w-full justify-center md:flex md:w-1/2 md:justify-end;
+}
+
+.gridjs-pagination .gridjs-pages button {
+  padding: 5px 14px;
+  border-right: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @apply btn lowercase text-primary btn-sm md:btn-md;
+}
+
+.gridjs-pagination .gridjs-pages button:hover {
+  outline: none;
+  @apply text-neutral-content bg-primary-content;
+}
+
+.gridjs-pagination .gridjs-pages button:disabled, .gridjs-pagination .gridjs-pages button[disabled], .gridjs-pagination .gridjs-pages button:hover:disabled {
+  cursor: default;
+  background-color: transparent;
+  @apply text-neutral-content opacity-30;
+}
+
+.gridjs-pagination .gridjs-pages button.gridjs-spread {
+  cursor: default;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  @apply text-primary;
+}
+
+.gridjs-pagination .gridjs-pages button.gridjs-currentPage {
+  font-weight: bold;
+  @apply text-neutral-content;
+}
+
+.gridjs-pagination .gridjs-pages button:last-child {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  @apply text-base;
+}
+
+.gridjs-pagination .gridjs-pages button:first-child {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  @apply text-base;
+}
+
+button.gridjs-sort {
+  float: right;
+  height: 24px;
+  width: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-size: contain;
+}
+
+button.gridjs-sort-neutral {
+  opacity: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.18567 13.1691L9.58138 14.5648C9.70029 14.6837 9.86014 14.75 10.0278 14.75C10.1954 14.75 10.3553 14.6837 10.4742 14.5648L11.8699 13.1691C12.1174 12.9215 12.1174 12.5219 11.8699 12.2763C11.7471 12.1535 11.5853 12.0911 11.4235 12.0911C11.2617 12.0911 11.0999 12.1535 10.9771 12.2763L10.6516 12.6019V7.87378C10.6516 7.52875 10.3728 7.25 10.0278 7.25C9.68275 7.25 9.404 7.52875 9.404 7.87378V12.6019L9.07846 12.2763C8.8309 12.0288 8.43129 12.0288 8.18567 12.2763C7.93811 12.5239 7.93811 12.9235 8.18567 13.1691Z' fill='%23CCCDCE'/%3E%3Cpath d='M7.87651 2.8309L6.47841 1.43519C6.3593 1.31628 6.19918 1.25 6.03125 1.25C5.86332 1.25 5.7032 1.31628 5.58409 1.43519L4.18599 2.8309C3.938 3.07846 3.938 3.47807 4.18599 3.72368C4.30901 3.84649 4.47108 3.90887 4.63315 3.90887C4.79522 3.90887 4.95729 3.84649 5.08031 3.72368L5.4064 3.39815V8.12622C5.4064 8.47125 5.68563 8.75 6.03125 8.75C6.37687 8.75 6.6561 8.47125 6.6561 8.12622V3.39815L6.98219 3.72368C7.23018 3.97125 7.63048 3.97125 7.87651 3.72368C8.1245 3.47612 8.1245 3.07651 7.87651 2.8309Z' fill='%23CCCDCE'/%3E%3C/svg%3E%0A");
+  background-position-y: center;
+}
+
+button.gridjs-sort-asc {
+  background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.87651 1.8309L2.47841 0.435185C2.3593 0.316277 2.19918 0.25 2.03125 0.25C1.86332 0.25 1.7032 0.316277 1.58409 0.435185L0.18599 1.8309C-0.0619968 2.07846 -0.0619968 2.47807 0.18599 2.72368C0.309008 2.84649 0.471078 2.90887 0.633149 2.90887C0.795219 2.90887 0.957289 2.84649 1.08031 2.72368L1.4064 2.39815V7.12622C1.4064 7.47125 1.68563 7.75 2.03125 7.75C2.37687 7.75 2.6561 7.47125 2.6561 7.12622V2.39815L2.98219 2.72368C3.23018 2.97125 3.63048 2.97125 3.87651 2.72368C4.1245 2.47612 4.1245 2.07651 3.87651 1.8309Z' fill='%23CCCDCE'/%3E%3C/svg%3E%0A");
+  background-position-y: 35%;
+  background-size: 10px;
+}
+
+button.gridjs-sort-desc {
+  background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.185673 6.1691L1.58138 7.56481C1.70029 7.68372 1.86014 7.75 2.02778 7.75C2.19542 7.75 2.35526 7.68372 2.47417 7.56481L3.86988 6.1691C4.11745 5.92154 4.11745 5.52193 3.86988 5.27632C3.74708 5.15351 3.58528 5.09113 3.42349 5.09113C3.2617 5.09113 3.0999 5.15351 2.9771 5.27632L2.65156 5.60185V0.873782C2.65156 0.528752 2.37281 0.25 2.02778 0.25C1.68275 0.25 1.404 0.528752 1.404 0.873782V5.60185L1.07846 5.27632C0.830897 5.02875 0.431287 5.02875 0.185673 5.27632C-0.0618908 5.52388 -0.0618908 5.92349 0.185673 6.1691Z' fill='%23CCCDCE'/%3E%3C/svg%3E%0A");
+  background-position-y: 65%;
+  background-size: 10px;
+}
+
+button.gridjs-sort:focus {
+  outline: none;
+}
+
+table.gridjs-table {
+  max-width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  display: table;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  table-layout: fixed;
+}
+
+.gridjs-tbody {
+  background-color: #fff;
+}
+
+td.gridjs-td {
+  padding: 12px 24px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  @apply bg-neutral;
+}
+
+td.gridjs-td:first-child {
+  border-left: none;
+}
+
+td.gridjs-td:last-child {
+  border-right: none;
+}
+
+td.gridjs-message {
+  text-align: center;
+}
+
+th.gridjs-th {
+  position: relative;
+  border-bottom: 1px solid #e5e7eb;
+  border-top: none;
+  padding: 14px 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  white-space: nowrap;
+  outline: none;
+  vertical-align: middle;
+  @apply bg-neutral text-neutral-content text-base;
+}
+
+th.gridjs-th .gridjs-th-content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  float: left;
+}
+
+th.gridjs-th-sort {
+  cursor: pointer;
+}
+
+th.gridjs-th-sort .gridjs-th-content {
+  width: calc(100% - 15px);
+}
+
+th.gridjs-th-sort:hover, th.gridjs-th-sort:focus {
+  background-color: #e5e7eb;
+}
+
+th.gridjs-th-fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-box-shadow: 0 1px 0 0 #e5e7eb;
+          box-shadow: 0 1px 0 0 #e5e7eb;
+}
+
+th.gridjs-th:first-child {
+  border-left: none;
+}
+
+th.gridjs-th:last-child {
+  border-right: none;
+}
+
+@supports (-moz-appearance: none) {
+  th.gridjs-th-fixed {
+    -webkit-box-shadow: 0 0 0 1px #e5e7eb;
+            box-shadow: 0 0 0 1px #e5e7eb;
+  }
+}
+
+.gridjs-tr {
+  border: none;
+}
+
+.gridjs-tr-selected td {
+  background-color: #ebf5ff;
+}
+
+.gridjs-tr:last-child td {
+  border-bottom: 0;
+}
+
+.gridjs *, .gridjs :after, .gridjs :before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gridjs-wrapper {
+  position: relative;
+  z-index: 1;
+  overflow: auto;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  border-top-width: 1px;
+  border-color: #e5e7eb;
+  border-radius: 16px;
+  @apply bg-transparent mb-1 shadow;
+}
+
+.gridjs-wrapper:nth-last-of-type(2) {
+  border-radius: 8px;
+  border-bottom-width: 1px;
+}
+
+.gridjs-search {
+  float: left;
+  @apply relative stroke-primary lg:w-1/3 w-full;
+}
+
+.gridjs-search:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  height: 52px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='%23EE3124' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' /%3E%3C/svg%3E") center/contain no-repeat;
+}
+
+.gridjs-search-input {
+  @apply w-full;
+}
+
+.gridjs-loading-bar {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.gridjs-loading-bar::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(204, 204, 204, 0)), color-stop(20%, rgba(204, 204, 204, 0.2)), color-stop(60%, rgba(204, 204, 204, 0.5)), to(rgba(204, 204, 204, 0)));
+  background-image: linear-gradient(90deg, rgba(204, 204, 204, 0) 0, rgba(204, 204, 204, 0.2) 20%, rgba(204, 204, 204, 0.5) 60%, rgba(204, 204, 204, 0));
+  -webkit-animation: shimmer 2s infinite;
+  animation: shimmer 2s infinite;
+  content: '';
+}
+
+@-webkit-keyframes shimmer {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.gridjs-td .gridjs-checkbox {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.gridjs-resizable {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 5px;
+}
+
+.gridjs-resizable:hover {
+  cursor: ew-resize;
+  background-color: #9bc2f7;
+}
+
+.gridjs-search input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.gridjs-search input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.gridjs-search input[type="search"]::-webkit-search-decoration,
+.gridjs-search input[type="search"]::-webkit-search-cancel-button,
+.gridjs-search input[type="search"]::-webkit-search-results-button,
+.gridjs-search input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+/*# sourceMappingURL=gridjs.css.map */

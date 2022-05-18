@@ -3,13 +3,13 @@ import OptionBadge from "../option/Badge";
 
 function ButtonOption() {
   return (
-    <div className="flex justify-evenly">
-      <div className="btn w-80 h-60 bg-base-100 shadow-xl">
-        <div className="flex-center relative">
+    <div className="flex justify-evenly ">
+      <div className="btn w-80 h-60 bg-base-100 shadow-xl bg-btn-hover">
+        <div className="flex-center relative ">
           <article className="text-option-survey normal-case">
             Luar Sepihak
           </article>
-          <OptionBadge textBadge="A" className="absolute right-0 top-0" />
+          <OptionBadge textBadge="A" className="absolute right-0 top-0 " />
         </div>
       </div>
       <div className="btn w-80 h-60 bg-base-100 shadow-xl">

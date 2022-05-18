@@ -58,5 +58,9 @@
 
 .bg-active {
   @extend .bg-transparent;
-  border-color: white;
+  border: 2px solid white;
+}
+
+.bg-btn-hover:hover {
+  background-color: #A265D1;
 }

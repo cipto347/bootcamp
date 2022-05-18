@@ -2,18 +2,18 @@ import propTypes from "prop-types";
 import React from "react";
 
 function ButtonNavigation(props) {
-  const { num } = props;
+  const { num, propClass } = props;
+
   return (
-    <div>
-      <button className="rounded-full  h-10 w-10 bg-transparent text-white">
-        {num}
-      </button>
-    </div>
+    <button className={`rounded-full  h-10 w-10 ${propClass} text-white`}>
+      {num}
+    </button>
   );
 }
 
 ButtonNavigation.propTypes = {
   num: propTypes.string.isRequired,
+  propClass: propTypes.string.isRequired,
 };
 
 export default ButtonNavigation;

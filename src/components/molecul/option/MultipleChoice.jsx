@@ -8,7 +8,7 @@ function OptionMultipleChoice(props) {
       <figure className="rounded-full h-8 w-8 bg-gray-100 text-option">
         {option}
       </figure>
-      <article className="text-content-oprion">{contentOption}</article>
+      <article className="text-content-option">{contentOption}</article>
     </div>
   );
 }

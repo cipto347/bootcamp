@@ -15,37 +15,39 @@ function Home() {
     <div data-theme="telkom">
       {/* <PartHeader /> */}
       <div className="flex main-layout">
-        <main className="w-full overflow-y-scroll">
+        <main className="w-full">
           <Hero />
           <div className="flex flex-row justify-center flex-wrap mt-8 w-3/4 mx-auto">
             <LandingCreate className="mb-10 w-full" />
-            <div className="w-1/2">
-              <CardLanding cardType="various" />
+            <div className="flex flex-row w-full">
+              <div className="w-1/2">
+                <CardLanding cardType="various" />
+              </div>
+              <div className="w-1/2 flex flex-col flex-center">
+                <TextTagging propsText="CREATE" />
+                <TextTitle title="Make your own Quiz" />
+                <TextDescription desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
+              </div>
             </div>
-            <div className="w-1/2 flex flex-col flex-center">
-              <TextTagging propsText="CREATE" />
-              <TextTitle title="Make your own Quiz" />
-              <TextDescription desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
+            <div className="flex flex-row w-full">
+              <div className="w-1/2 flex flex-col flex-center">
+                <TextTagging propsText="CREATE" />
+                <TextTitle title="Make your own Quiz" />
+                <TextDescription desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
+              </div>
+              <div className="w-1/2">
+                <CardLanding cardType="any" />
+              </div>
             </div>
-          </div>
-          <div className="flex flex-row justify-center flex-wrap mt-8 w-3/4 mx-auto">
-            <div className="w-1/2 flex flex-col flex-center">
-              <TextTagging propsText="CREATE" />
-              <TextTitle title="Make your own Quiz" />
-              <TextDescription desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
-            </div>
-            <div className="w-1/2">
-              <CardLanding cardType="any" />
-            </div>
-          </div>
-          <div className="flex flex-row justify-center flex-wrap mt-8 w-3/4 mx-auto mb-12">
-            <div className="w-1/2">
-              <CardLanding cardType="score" />
-            </div>
-            <div className="w-1/2 flex flex-col flex-center">
-              <TextTagging propsText="CREATE" />
-              <TextTitle title="Make your own Quiz" />
-              <TextDescription desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
+            <div className="flex flex-row w-full mb-20">
+              <div className="w-1/2">
+                <CardLanding cardType="score" />
+              </div>
+              <div className="w-1/2 flex flex-col flex-center">
+                <TextTagging propsText="CREATE" />
+                <TextTitle title="Make your own Quiz" />
+                <TextDescription desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo." />
+              </div>
             </div>
           </div>
           <Footer />

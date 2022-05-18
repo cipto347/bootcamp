@@ -9,15 +9,14 @@ $colorGradient: linear-gradient(180deg, #AA80F9 0%, #756CE0 100%);
   background: linear-gradient(180deg, #AA80F9 0%, #756CE0 100%);
 }
 
-.btn-white {
-  border-color: linear-gradient(180deg, #AA80F9 0%, #756CE0 100%);
-}
-
 .btn-tp {
   background-color: transparent;
 }
 
 .text-gradient {
-  --tw-text-opacity: 1 !important;
   color: linear-gradient(180deg, #AA80F9 0%, #756CE0 100%);
+}
+
+.border-gradient {
+  border: linear-gradient(180deg, #AA80F9 0%, #756CE0 100%);
 }

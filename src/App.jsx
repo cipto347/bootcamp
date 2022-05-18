@@ -28,8 +28,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-
-      <Route element={<LandingCreate />} path="/landing-create" />
+      <Route element={<SurveyPreview />} path="/survey-preview" />
       <Route element={<Summary />} path="/summary" />
       <Route element={<Survey />} path="/survey" />
       <Route element={<AdminLayout />}>
@@ -43,7 +42,6 @@ function App() {
           </ProtectedRoute>
         }
       />
-      <Route element={<SurveyPreview />} path="/preview-survey" />
       <Route path="*" element={<NoMatch />} />
     </Routes>
   );

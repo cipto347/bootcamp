@@ -1,7 +1,6 @@
-import React from "react";
 import propTypes from "prop-types";
 import Create from "../../../asset/create.png";
-import Publish from "../../../asset/Publish.png";
+import Publish from "../../../asset/publish.png";
 import Calculate from "../../../asset/calculate.png";
 
 function ImagesLoader(props) {

@@ -7,7 +7,6 @@ import useAuth from "./services/auth/UseAuth";
 // pages
 import Home from "./page/Home";
 // import ImageLanding from "./components/atom/image/Landing";
-import LandingCreate from "./components/organisme/landing/Create";
 import Summary from "./page/Summary";
 import AdminLayout from "./page/layout/Layout";
 import SurveyPreview from "./page/SurveyPreview";

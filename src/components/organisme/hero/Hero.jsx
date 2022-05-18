@@ -1,6 +1,9 @@
 import PartHeader from "../part/Header2";
 
 function Hero() {
+  const handleMove = () => {
+    window.location.href = "/survey-preview";
+  };
   return (
     <div className="h-screen" data-theme="telkom">
       <div className="flex">
@@ -19,6 +22,7 @@ function Hero() {
                 </h6>
                 <button
                   type="button"
+                  onClick={handleMove}
                   className="btn btn-gradient pt-4 pb-5 pl-14 pr-14 ml-44 mt-12 text-white border-none rounded-md"
                 >
                   demo Quiz, NOW!

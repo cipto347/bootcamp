@@ -9,6 +9,14 @@
   line-height: em(14);
   letter-spacing: 0.1em;
 }
+.text-footer {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: em(12);
+  line-height: em(14);
+  letter-spacing: 0.1em;
+}
 
 .text-title {
   font-family: $font;
@@ -259,6 +267,15 @@
   @apply opacity-60
 }
 
+.quiz-title{
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: em(28);
+  line-height: 32px;
+  letter-spacing: 0.0075em;
+  margin-bottom: 8px;
+}
 [data-theme=telkom] .text-content {
   color: #808285;
 }
